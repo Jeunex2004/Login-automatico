@@ -1,0 +1,24 @@
+{
+  "name": "secion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.51.1",
+    "dotenv": "^16.4.5",
+    "playwright": "^1.42.1",
+    "secion": "file:"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.0"
+  }
+}
