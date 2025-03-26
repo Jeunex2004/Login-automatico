@@ -2,7 +2,7 @@ import { LoginAutomation } from './login';
 
 // Mock de las variables de entorno con credenciales incorrectas
 process.env.USER = '12347';
-process.env.PASSWORD = 'Contrasella incorecta';
+process.env.PASSWORD = 'Contrasella incorecta.jpg';
 
 describe('LoginAutomation', () => {
     let loginAutomation: LoginAutomation;
