@@ -35,7 +35,7 @@ export class LoginAutomation {
     async launchBrowser(): Promise<void> {
         this.browser = await chromium.launch({
             headless: false,
-            executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
+            channel: 'chrome',
         });
         const context = await this.browser.newContext();
         this.page = await context.newPage();

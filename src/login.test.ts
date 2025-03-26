@@ -1,3 +1,4 @@
+import { channel } from 'diagnostics_channel';
 import { LoginAutomation } from './login';
 import { chromium } from 'playwright';
 
@@ -43,7 +44,7 @@ describe('LoginAutomation', () => {
         await loginAutomation.launchBrowser();
         expect(chromium.launch).toHaveBeenCalledWith({
             headless: false,
-            executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
+            channel: 'chrome',
         });
     });
 
